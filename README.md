@@ -1,10 +1,6 @@
-# poke-type-checker
+# Pokemon Type Checker 
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+I could never remember which types I should use whenever I'm playing Pokemon Go - so I've created a lightweight and quick to use Type Checker!
 
 ## Customize configuration
 

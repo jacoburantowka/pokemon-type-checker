@@ -9,7 +9,7 @@ import HelloWorld from "./components/HelloWorld.vue";
       <div class="wrapper">
         <HelloWorld msg="Pokemon Type Checker" />
 
-        <nav>
+        <nav class="flex flex-col lg:items-start">
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/poke">Search for Pokemon</RouterLink>
           <RouterLink to="/type">Search for Type</RouterLink>
@@ -42,7 +42,7 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -58,7 +58,6 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {

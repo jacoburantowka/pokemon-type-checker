@@ -4,26 +4,29 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
+  <div class="main-container">
+    <header>
+      <div class="wrapper">
+        <HelloWorld msg="Pokemon Type Checker" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/poke">Search for Pokemon</RouterLink>
+          <RouterLink to="/type">Search for Type</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+    <RouterView />
+  </div>
+  <footer class="mt-8 px-8 text-center">
+    Written in <a href="https://vuejs.org/" class="text-green-500">Vue3</a>.
+    Styling done using
+    <a href="https://tailwindcss.com/" class="text-sky-500">TailwindCSS</a>. Big
+    thanks to the
+    <a href="https://pokeapi.co/" class="text-orange-500">PokeAPI</a> team and
+    contributors.
+  </footer>
 </template>
 
 <style scoped>
@@ -86,6 +89,15 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
   }
 }
 </style>

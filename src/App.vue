@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import TypesTableView from "./views/TypesTableView.vue";
 </script>
 
 <template>
@@ -10,7 +11,6 @@ import HelloWorld from "./components/HelloWorld.vue";
         <HelloWorld msg="Pokemon Type Checker" />
 
         <nav class="flex flex-col lg:items-start">
-          <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/poke">Search for Pokemon</RouterLink>
           <RouterLink to="/type">Search for Type</RouterLink>
         </nav>
@@ -19,6 +19,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
     <RouterView />
   </div>
+  <TypesTableView />
   <footer class="mt-8 px-8 text-center">
     Written in <a href="https://vuejs.org/" class="text-green-500">Vue3</a>.
     Styling done using

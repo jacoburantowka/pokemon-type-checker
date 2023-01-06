@@ -3,12 +3,12 @@
     <thead>
       <tr>
         <th>Types</th>
-        <th v-for="(type, idx) in types" :key="type" >{{ idx }}</th>
+        <th v-for="(type, idx) in types" :key="type" class="w-16">{{ idx }}</th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="(type, idx) in types" :key="type">
-        <th>{{ idx }}</th>
+        <th class="w-16">{{ idx }}</th>
         <td v-for="dmg in type" :key="dmg" class="text-center">{{ dmg }}</td>
       </tr>
     </tbody>

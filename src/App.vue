@@ -19,7 +19,7 @@ import TypesTableView from "./views/TypesTableView.vue";
 
     <RouterView />
   </div>
-  <TypesTableView />
+  <TypesTableView class="hidden xl:block" />
   <footer class="mt-8 px-8 text-center">
     Written in <a href="https://vuejs.org/" class="text-green-500">Vue3</a>.
     Styling done using
